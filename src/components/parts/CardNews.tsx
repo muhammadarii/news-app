@@ -1,13 +1,7 @@
+import { NewsArticle } from "@/types";
 import Link from "next/link";
 import React from "react";
 import { MdArrowOutward } from "react-icons/md";
-
-type NewsArticle = {
-  title?: string;
-  urlToImage?: string;
-  description?: string;
-  url?: string;
-};
 
 export const CardNews: React.FC<NewsArticle> = ({
   title,

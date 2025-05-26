@@ -1,4 +1,6 @@
+import Footer from "@/components/parts/Footer";
 import HomePage from "@/components/sections/HomePage";
+import BusinessNews from "@/components/sections/HomePage/BusinessNews";
 import UpdateNews from "@/components/sections/HomePage/UpdateNews";
 
 export default function Home() {
@@ -6,6 +8,8 @@ export default function Home() {
     <>
       <HomePage />
       <UpdateNews />
+      <BusinessNews />
+      <Footer />
     </>
   );
 }
