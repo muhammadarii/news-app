@@ -3,7 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 const HomePage = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="relative w-full h-[500px] rounded-2xl shadow-2xl">
+      <div className="relative w-full h-[500px] rounded-2xl border-[#D8FF99] border-[0.5px] shadow-2xl overflow-hidden">
         <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-row items-center justify-center gap-10">
           <h1 className="text-[40px] font-semibold ">
             <span className="bg-[#D8FF99] p-2 rounded-t-2xl">Latest</span>
