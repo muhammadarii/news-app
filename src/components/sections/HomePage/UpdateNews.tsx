@@ -22,12 +22,12 @@ const UpdateNews: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center p-4 mt-8">
-      <h1 className="text-4xl font-bold">Latest Updates</h1>
-      <p className="text-gray-600 text-[12px] mt-2">
+      <h1 className="text-4xl font-bold text-center">Latest Updates</h1>
+      <p className="text-gray-600 text-[12px] mt-2 text-center">
         Discover our most recent developments and initiatives in our Latest
         Updates. We keep you in the loop with the latest news
       </p>
-      <div className="grid grid-cols-3 gap-4 mt-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
         {data?.articles?.slice(0, 6).map((news, index) => (
           <CardNews
             key={index}

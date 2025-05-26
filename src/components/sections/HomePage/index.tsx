@@ -4,16 +4,16 @@ const HomePage = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="relative w-full h-[500px] rounded-2xl border-[#D8FF99] border-[0.5px] shadow-2xl overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-row items-center justify-center gap-10">
-          <h1 className="text-[40px] font-semibold ">
+        <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col md:flex-row items-center justify-center gap-10">
+          <h1 className="text-[40px] font-semibold text-center">
             <span className="bg-[#D8FF99] p-2 rounded-t-2xl">Latest</span>
             <br />
-            <span className="bg-[#D8FF99] p-2 rounded-bl-2xl rounded-r-2xl ">
+            <span className="bg-[#D8FF99] p-2 rounded-2xl md:rounded-bl-2xl md:rounded-r-2xl ">
               Updates and News
             </span>
           </h1>
-          <div className="flex flex-col">
-            <p className=" w-[600px]">
+          <div className="flex flex-col px-10 md:px-0">
+            <p className="md:w-[600px]">
               Explore heartwarming stories, trending topics, and breaking news
               from around the world. Stay informed with the latest updates in
               technology, health, entertainment, and more. Dive into in-depth
