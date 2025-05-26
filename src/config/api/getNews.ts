@@ -1,12 +1,12 @@
 export const getUpdateNews = async () => {
   try {
-    const response = await fetch(
-      "https://newsapi.org/v2/everything?q=tesla&from=2025-04-26&sortBy=publishedAt&apiKey=69e953354c9d4b468da4a23b1a9743a6",
-      {
-        method: "GET",
-      }
-    );
-    return await response.json();
+    const response = await fetch("/api/updateNews");
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+
+    const data = await response.json();
+    return data || [];
   } catch (error) {
     console.error("Error fetching update news:", error);
     return [];
@@ -15,15 +15,15 @@ export const getUpdateNews = async () => {
 
 export const getBusinessNews = async () => {
   try {
-    const response = await fetch(
-      "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=69e953354c9d4b468da4a23b1a9743a6",
-      {
-        method: "GET",
-      }
-    );
-    return await response.json();
+    const response = await fetch("/api/businessNews");
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+
+    const data = await response.json();
+    return data || [];
   } catch (error) {
-    console.error("Error fetching business news:", error);
+    console.error("Error fetching update news:", error);
     return [];
   }
 };

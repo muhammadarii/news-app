@@ -19,7 +19,6 @@ const UpdateNews: React.FC = () => {
   if (isLoading)
     return <Skeleton active paragraph={{ rows: 4 }} className="mt-10" />;
   if (error) return <p>Error fetching news</p>;
-  console.log(data);
 
   return (
     <div className="flex flex-col items-center justify-center p-4 mt-8">
