@@ -5,11 +5,11 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="flex flex-col">
       <footer className="text-black py-4 border-t border-gray-200">
-        <div className="flex flex-row justify-between items-center mx-auto px-4">
+        <div className="flex flex-row justify-between items-center mx-auto">
           <Image src={Logo} alt="Logo" className="w-[150px]" />
-          <div className="flex flex-row items-center gap-6">
+          <div className="hidden md:flex flex-row items-center gap-6">
             <p>Home</p>
             <p>About</p>
             <p>News</p>

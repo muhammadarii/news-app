@@ -20,7 +20,7 @@ const BusinessNews: React.FC = () => {
   if (error) return <p>Error fetching business news</p>;
 
   return (
-    <div className="flex flex-col items-center justify-center p-4 mt-8">
+    <div className="flex flex-col items-center justify-center mt-8">
       <h1 className="text-4xl font-bold text-center">Business News</h1>
       <p className="text-gray-600 text-[12px] mt-2 text-center">
         Stay informed with the latest business news and trends. Explore our

@@ -10,8 +10,8 @@ export const CardNews: React.FC<NewsArticle> = ({
   url,
 }) => {
   return (
-    <div className="relative w-[400px] h-[600px] shadow-2xl rounded-lg">
-      <div className="my-2 w-[400px] p-4">
+    <div className="relative w-screen md:w-[400px] h-[600px] shadow-2xl rounded-lg">
+      <div className="my-2 w-screen md:w-[400px] p-4">
         {urlToImage ? (
           <img
             src={urlToImage}
