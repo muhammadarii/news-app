@@ -21,13 +21,13 @@ const HomePage = () => {
               a moment with our real-time news coverage tailored just for you.
             </p>
             <div className="flex flex-row items-center gap-4 mt-4">
-              <button className="py-2 px-3 text-white flex flex-row gap-2 items-center bg-black rounded-full shadow-md">
+              <button className="py-2 px-3 text-white flex flex-row gap-2 items-center bg-black rounded-full shadow-md hover:scale-105 transition-transform duration-300">
                 Join the Movement
                 <div className="bg-gray-500 p-1 rounded-full">
                   <MdArrowOutward />
                 </div>
               </button>
-              <button className="py-2 px-3 text-black flex flex-row gap-2 items-center bg-gray-200 rounded-full shadow-md">
+              <button className="py-2 px-3 text-black flex flex-row gap-2 items-center bg-gray-200 rounded-full shadow-md hover:scale-105 transition-transform duration-300">
                 Support Our Case
               </button>
             </div>
