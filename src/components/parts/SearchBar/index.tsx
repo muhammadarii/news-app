@@ -5,7 +5,7 @@ import { NewsArticle } from "@/types";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import { SearchPopup } from "./SearchPopUP";
-import SkeletonInput from "antd/es/skeleton/Input";
+import { SkeletonLoadingInput } from "../Skeleton";
 
 interface SearchBarProps {
   className?: string;
@@ -41,7 +41,7 @@ export const SearchBar = ({ className = "" }: SearchBarProps) => {
     if (e.key === "Enter") handleSearch();
   };
 
-  if (isLoading) return <SkeletonInput active className="mt-10" />;
+  if (isLoading) return <SkeletonLoadingInput className="mt-8" />;
   if (error)
     return <p className="text-center text-red-500">Error fetching news</p>;
 
