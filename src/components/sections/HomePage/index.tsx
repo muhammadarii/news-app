@@ -8,7 +8,7 @@ const HomePage = () => {
         <div className="absolute top-0 left-0 right-0 flex items-center justify-center z-50">
           <SearchBar />
         </div>
-        <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col md:flex-row items-center justify-center gap-10">
+        <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col md:flex-row items-center justify-center gap-10 mt-14 md:mt-0">
           <h1 className="text-[30px] md:text-[40px] font-semibold text-center md:text-start">
             <span className="bg-[#D8FF99] p-2 rounded-t-2xl">Latest</span>
             <br />

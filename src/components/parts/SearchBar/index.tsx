@@ -47,7 +47,7 @@ export const SearchBar = ({ className = "" }: SearchBarProps) => {
 
   return (
     <div className="flex items-center justify-center relative">
-      <div className={`mt-10 w-[500px] ${className}`}>
+      <div className={`mt-10 lg:w-[500px] ${className}`}>
         <input
           className="border-2 border-black rounded-full px-4 py-2 w-full"
           placeholder="Search News"

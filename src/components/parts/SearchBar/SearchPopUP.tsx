@@ -7,7 +7,7 @@ export const SearchPopup = ({
   results: NewsArticle[];
   onClose: () => void;
 }) => (
-  <div className="absolute top-[80px] w-[500px] max-h-[400px] overflow-y-auto bg-white border shadow-lg rounded-md p-4 z-50">
+  <div className="absolute top-[80px] w-[400px] lg:w-[500px] max-h-[400px] overflow-y-auto bg-white border shadow-lg rounded-md p-4 z-50">
     <div className="flex justify-between items-center mb-2">
       <h2 className="text-lg font-semibold">Search Results</h2>
       <button
